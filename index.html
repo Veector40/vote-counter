@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Брояч на гласове</h1>
+        <div id="main-content">
+            <div id="counter-grid">
+                <!-- 30 cells for counting votes with labels -->
+                <div class="cell-container">
+                    <label for="cell-1">1</label>
+                    <div class="cell" id="cell-1" onclick="increment('cell-1')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-2">2</label>
+                    <div class="cell" id="cell-2" onclick="increment('cell-2')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-3">3</label>
+                    <div class="cell" id="cell-3" onclick="increment('cell-3')">0</div>
+                </div>
+                <!-- Repeat for cells 4 to 30 -->
+                <div class="cell-container">
+                    <label for="cell-4">4</label>
+                    <div class="cell" id="cell-4" onclick="increment('cell-4')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-5">5</label>
+                    <div class="cell" id="cell-5" onclick="increment('cell-5')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-6">6</label>
+                    <div class="cell" id="cell-6" onclick="increment('cell-6')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-7">7</label>
+                    <div class="cell" id="cell-7" onclick="increment('cell-7')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-8">8</label>
+                    <div class="cell" id="cell-8" onclick="increment('cell-8')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-9">9</label>
+                    <div class="cell" id="cell-9" onclick="increment('cell-9')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-10">10</label>
+                    <div class="cell" id="cell-10" onclick="increment('cell-10')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-11">11</label>
+                    <div class="cell" id="cell-11" onclick="increment('cell-11')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-12">12</label>
+                    <div class="cell" id="cell-12" onclick="increment('cell-12')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-13">13</label>
+                    <div class="cell" id="cell-13" onclick="increment('cell-13')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-14">14</label>
+                    <div class="cell" id="cell-14" onclick="increment('cell-14')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-15">15</label>
+                    <div class="cell" id="cell-15" onclick="increment('cell-15')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-16">16</label>
+                    <div class="cell" id="cell-16" onclick="increment('cell-16')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-17">17</label>
+                    <div class="cell" id="cell-17" onclick="increment('cell-17')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-18">18</label>
+                    <div class="cell" id="cell-18" onclick="increment('cell-18')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-19">19</label>
+                    <div class="cell" id="cell-19" onclick="increment('cell-19')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-20">20</label>
+                    <div class="cell" id="cell-20" onclick="increment('cell-20')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-21">21</label>
+                    <div class="cell" id="cell-21" onclick="increment('cell-21')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-22">22</label>
+                    <div class="cell" id="cell-22" onclick="increment('cell-22')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-23">23</label>
+                    <div class="cell" id="cell-23" onclick="increment('cell-23')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-24">24</label>
+                    <div class="cell" id="cell-24" onclick="increment('cell-24')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-25">25</label>
+                    <div class="cell" id="cell-25" onclick="increment('cell-25')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-26">26</label>
+                    <div class="cell" id="cell-26" onclick="increment('cell-26')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-27">27</label>
+                    <div class="cell" id="cell-27" onclick="increment('cell-27')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-28">28</label>
+                    <div class="cell" id="cell-28" onclick="increment('cell-28')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-29">29</label>
+                    <div class="cell" id="cell-29" onclick="increment('cell-29')">0</div>
+                </div>
+                <div class="cell-container">
+                    <label for="cell-30">30</label>
+                    <div class="cell" id="cell-30" onclick="increment('cell-30')">0</div>
+                </div>
+
+                <div class="cell-container">
+                    <label for="cell-31">31</label>
+                    <div class="cell" id="cell-31" onclick="increment('cell-31')">0</div>
+                </div>
+
+                <div class="cell-container">
+                    <label for="cell-32">32</label>
+                    <div class="cell" id="cell-32" onclick="increment('cell-32')">0</div>
+                </div>
+
+                
+            </div>
+            <div id="invalid-vote-container">
+                <h2>Invalid Votes</h2>
+                <div id="invalid-counter" onclick="incrementInvalid()">0</div>
+                <button onclick="decrementInvalid()">Намали невалидните</button>
+                <h2 style="margin-top: 50px">Общо</h2>
+                <div id="total-counter">0</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="undo-btn" onclick="undo()">Назад</button>
+            <button id="redo-btn" onclick="redo()">Напред</button>
+            <button id="reset-btn" onclick="reset()">Нулирай всички</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
