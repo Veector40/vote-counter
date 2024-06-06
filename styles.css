@@ -1,16 +1,16 @@
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
     background-color: #f0f0f0;
 }
 
 .container {
-    transform: scale(0.6);
+    transform: scale(0.46);
     text-align: center;
 }
 
