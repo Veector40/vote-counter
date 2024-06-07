@@ -10,7 +10,7 @@ html, body {
 }
 
 .container {
-    transform: scale(0.65);
+    transform: scale(0.6);
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ html, body {
     align-items: center;
 }
 
-.cell, #invalid-counter, #total-counter {
+.cell, #no-one-counter, #wrongly-filled-counter, #destroyed-counter, #invalid-counter, #total-counter {
     background-color: #e0e0e0;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -57,6 +57,13 @@ label {
 }
 
 #invalid-vote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#not-supporting{
     display: flex;
     flex-direction: column;
     align-items: center;

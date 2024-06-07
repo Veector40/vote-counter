@@ -11,7 +11,7 @@
         <h1>Брояч на гласове</h1>
         <div id="main-content">
             <div id="counter-grid">
-                <!-- 30 cells for counting votes with labels -->
+                <!-- 32 cells for counting votes with labels -->
                 <div class="cell-container">
                     <label for="cell-1">1</label>
                     <div class="cell" id="cell-1" onclick="increment('cell-1')">0</div>
@@ -133,31 +133,36 @@
                     <label for="cell-30">30</label>
                     <div class="cell" id="cell-30" onclick="increment('cell-30')">0</div>
                 </div>
-
                 <div class="cell-container">
                     <label for="cell-31">31</label>
                     <div class="cell" id="cell-31" onclick="increment('cell-31')">0</div>
                 </div>
-
                 <div class="cell-container">
                     <label for="cell-32">32</label>
                     <div class="cell" id="cell-32" onclick="increment('cell-32')">0</div>
                 </div>
-
-                
             </div>
             <div id="invalid-vote-container">
-                <h2>Невалидни</h2>
+                <h2>Не подкрепям <br> никого</h2>
+                <div id="no-one-counter" onclick="incrementNoOne()">0</div>
+                <button onclick="decrementNoOne()">Намали</button>
+
+                <h2>Сгрешени</h2>
                 <div id="invalid-counter" onclick="incrementInvalid()">0</div>
                 <button onclick="decrementInvalid()">Намали</button>
-                <h2 style="margin-top: 50px">Общо</h2>
+                
+                <h2>Унищожени</h2>
+                <div id="destroyed-counter" onclick="incrementDestroyed()">0</div>
+                <button onclick="decrementDestroyed()">Намали</button>
+                
+                <h2 style="margin-top: 20px">Общо</h2>
                 <div id="total-counter">0</div>
             </div>
         </div>
         <div class="buttons">
-            <button id="undo-btn" onclick="undo()">Назад</button>
-            <button id="redo-btn" onclick="redo()">Напред</button>
-            <button id="reset-btn" onclick="reset()">Нулирай всички</button>
+            <button id="undo-button" onclick="undo()" disabled>Назад</button>
+            <button id="redo-button" onclick="redo()" disabled>Напред</button>
+            <button id="reset-button" onclick="reset()" disabled>Нулирай всички</button>
         </div>
     </div>
     <script src="scripts.js"></script>
